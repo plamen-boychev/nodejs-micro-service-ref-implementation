@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-micro-service-ref-implementation",
+  "version": "1.0.0",
+  "description": "Reference implementation of a Node.js based REST API service",
+  "main": "dist/cli/run-server.js",
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.6",
+    "@types/koa-router": "^7.4.4",
+    "@types/node": "^17.0.21",
+    "@types/uuid": "^8.3.4",
+    "jasmine": "^4.0.2",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "run-dev": "nodemon src/cli/run-server.ts",
+    "build": "rimraf dist && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "rimraf": "^3.0.2",
+    "uuid": "^8.3.2"
+  }
+}
